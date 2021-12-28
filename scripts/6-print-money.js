@@ -2,7 +2,7 @@ import { ethers } from "ethers";
 import sdk from "./1-initialize-sdk.js";
 
 const tokenModule = sdk.getTokenModule(
-  "0x4b093889B5fF8f3C391Db81e54b87590B83D07f4"
+  "0x7aB1C46759853497655C47d615937c918dE974C1"
 );
 
 (async () => {
@@ -11,8 +11,8 @@ const tokenModule = sdk.getTokenModule(
     const amountWith18Decimals = ethers.utils.parseUnits(amount.toString(), 18);
     await tokenModule.mint(amountWith18Decimals);
     const totalSupply = await tokenModule.totalSupply();
-    console.log(ethers.utils.parseUnits(amount.toString(), 18)+" $SADZA now in circulation")
+    console.log(ethers.utils.parseUnits(amount.toString(), 18)+" $ZWAP now in circulation")
   } catch (e) {
-    console.error("Failed toprint the money:: ", e);
+    console.error("Failed to print the money:: ", e);
   }
 })();

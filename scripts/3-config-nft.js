@@ -2,7 +2,7 @@ import sdk from './1-initialize-sdk.js';
 import { readFileSync } from "fs";
 
 const bundleDrop = sdk.getBundleDropModule(
- "0xBc41137D4Ce480edd67A1D871f6FB99bE706C9E4"
+ "0x9c0C0E7d3553cfbD75ef92D3777B574aE0D67Ba9"
 );
 
 ( async () => {
@@ -11,7 +11,7 @@ const bundleDrop = sdk.getBundleDropModule(
       {
         name: "Plateau Hill",
         description: "White staple for all joiners",
-        image: readFileSync("scripts/assets/pap1.jpg")
+        image: readFileSync("./assets/pap1.jpg")
       }
     ]);
     console.log("Created new NFT drop succesfully...")

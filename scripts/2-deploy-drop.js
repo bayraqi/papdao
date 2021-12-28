@@ -7,9 +7,9 @@ const app = sdk.getAppModule("0x5745513C19ce2e951f375B1c627466484e971A85");
 (async () => {
   try {
     const bundleDropModule = await app.deployBundleDropModule({
-      name: "PapDAO Membership",
-      description: "For the love of pap",
-      image: readFileSync("scripts/assets/pap.jpg"),
+      name: "zwapDAO Membership",
+      description: "For the love of ZW pap",
+      image: readFileSync("./assets/pap.jpg"),
       primarySaleRecipientAddress: ethers.constants.AddressZero
     });
 

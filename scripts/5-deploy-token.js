@@ -5,8 +5,8 @@ const app = sdk.getAppModule("0x5745513C19ce2e951f375B1c627466484e971A85");
 (async () => {
   try{
     const tokenModule = await app.deployTokenModule({
-      name: "PapDAO Governance Token",
-      symbol: "SADZA"
+      name: "zwapDAO Governance Token",
+      symbol: "ZWAP"
     });
     console.log("Success: Deployed token module at:: ", tokenModule.address);
   } catch (e) {
